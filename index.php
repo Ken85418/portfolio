@@ -1,0 +1,159 @@
+    <?php include('includes/header.php')?>
+
+    <section id="hero">
+        <div class="wrapper">
+            <div class="hero_con">
+
+                <div class="hero_img">
+                    <div class="hero_img__profile">
+                        <figure><img src="images/hero-img.png" alt="Ken"></figure>
+                    </div>
+                    
+                </div>
+                
+                <div class="hero_info">
+                    <h3>Hi I am <span>Ken Joseph Erispe</span></h3>
+                    <h2>Web <span>Developer</span></h2>
+                    <p>Passionate front-end web developer with 2 years of experience in creating dynamic, user-friendly interfaces. Currently expanding skill set to become a full-stack developer with a keen interest in integrating both front-end and back-end technologies.</p>
+                    <a href="#contact" class="btn--style1">Hire Me </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="wrapper">
+            <div class="about_con">
+
+                <div class="hero_img">
+                    <div class="hero_img__profile">
+                        <figure><img src="images/hero-img2.png" alt="Ken"></figure>
+                    </div>
+                </div>
+
+                <div class="about_info">
+                    <h2 class="heading--style1">About Me </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="wrapper">
+            <div class="skills_con">
+                
+                <div class="skills_info text_center">
+                    <h2 class="heading--style1">Skills</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium</p>
+                </div>
+
+                <div class="skills_img">
+                    <figure><img src="images/skills-img1.png" alt="HTML5" title="HTML5"></figure>
+                    <figure><img src="images/skills-img2.png" alt="CSS3" title="CSS3"></figure>
+                    <figure><img src="images/skills-img3.png" alt="JavaScript" title="JavaScript"></figure>
+                    <figure><img src="images/skills-img4.png" alt="PHP" title="PHP"></figure>
+                    <figure><img src="images/skills-img5.png" alt="Wordpress" title="Wordpress"></figure>
+                    <figure><img src="images/skills-img6.png" alt="Git" title="Git"></figure>
+                    <figure><img src="images/skills-img7.png" alt="Figma" title="Figma"></figure>
+                    <figure><img src="images/skills-img8.png" alt="Sass" title="Sass"></figure>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="wrapper">
+            <div class="projects_con">
+
+                <div class="projects_info text_center">
+                    <h2 class="heading--style1">My Projects</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus. Phasellus consequat urna tellus</p>
+                </div>
+
+                <div class="projects_cards">
+                    <div class="projects_card">
+                        <figure><img src="images/projects/backyard-bears-day-school.png" alt=""></figure>
+                        <h2>Backyard Bears <span>Day School</span></h2>
+                        <a href="" target="_blank" rel="nofollow"></a>
+                    </div>
+                    <div class="projects_card">
+                        <figure><img src="images/projects/allure-professional-cleaning.png" alt=""></figure>
+                        <h2>Allure Professional <span>Cleaning, LLC.</span></h2>
+                        <a href="https://www.allureprofessionalcleaning.com/" target="_blank" rel="nofollow"></a>
+                    </div>
+                    <div class="projects_card">
+                        <figure><img src="images/projects/golden-age-care-home-agency-limited.png" alt=""></figure>
+                        <h2>GOLDEN AGE CARE <span>HOME AGENCY LIMITED</span></h2>
+                        <a href="https://www.goldenagecarehomeagency.com/" target="_blank" rel="nofollow"></a>
+                    </div>
+                    <div class="projects_card">
+                        <figure><img src="images/projects/noahs-nook-pre-school.png" alt=""></figure>
+                        <h2>Noah's Nook Pre-School <span>& DayCare</span></h2>
+                        <a href="https://w13984.proweaversite13.com/" target="_blank" rel="nofollow"></a>
+                    </div>
+                    <div class="projects_card">
+                        <figure><img src="images/projects/divine-health-care-agency-llc.png" alt=""></figure>
+                        <h2>Divine Health Care <span>Agency LLC</span></h2>
+                        <a href="http://www.divinehealthcaree.com/" target="_blank" rel="nofollow"></a>
+                    </div>
+                    <div class="projects_card">
+                        <figure><img src="images/projects/artistry-nurse-staffing.png" alt=""></figure>
+                        <h2>Artistry Nurse <span>Staffing</span></h2>
+                        <a href="https://w13495.proweaversite13.com/" target="_blank" rel="nofollow"></a>
+                    </div>
+                    <div class="projects_card">
+                        <figure><img src="images/projects/lia-tax-and-management-llc.png" alt=""></figure>
+                        <h2>Lia Tax and <span>Management LLC</span></h2>
+                        <a href="https://www.liataxandmgmt.com/" target="_blank" rel="nofollow"></a>
+                    </div>
+                    <div class="projects_card">
+                        <figure><img src="images/projects/rcc-child-learning-center.png" alt=""></figure>
+                        <h2>RCC Child <span>Learning Center</span></h2>
+                        <a href="https://www.rccchild.com/" target="_blank" rel="nofollow"></a>
+                    </div>
+                    <div class="projects_card">
+                        <figure><img src="images/projects/jesus-in-the-house-ministries.png" alt=""></figure>
+                        <h2>Jesus in the House <span>Ministries (JITH Ministries)</span></h2>
+                        <a href="https://www.jesusinthehouse.org/" target="_blank" rel="nofollow"></a>
+                    </div>
+                    <div class="projects_card">
+                        <figure><img src="images/projects/community-keepers-homecare.png" alt=""></figure>
+                        <h2>Community Keepers <span>Homecare</span></h2>
+                        <a href="https://www.communitykeepershomecare.com/" target="_blank" rel="nofollow"></a>
+                    </div>
+                </div>
+
+                <div class="projects_btn">
+                    <a href="projects.php" class="btn--style1">More Projects</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="wrapper">
+            <div class="contact_con">
+
+                <div class="contact_info text_center">
+                    <h2 class="heading--style1">Send Me a Message</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium</p>
+                </div>
+
+                <form id="contactForm" action="contact.php" method="POST" class="contact_form">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn--style1">Send</button>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+
+    <?php include('includes/footer.php')?>

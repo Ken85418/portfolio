@@ -1,0 +1,572 @@
+@charset "UTF-8";
+/*Fonts Used*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Heading size */
+/* Heading and Button Styles */
+.heading--style1 {
+  font-size: 65px;
+  font-weight: 600;
+}
+
+.btn--style1 {
+  display: block;
+  width: 188px;
+  max-width: 100%;
+  height: 52px;
+  line-height: 52px;
+  background: #000;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0 10px;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.btn--style1:hover {
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.05);
+  transition: 0.01s ease;
+}
+.btn--style1::before {
+  content: "";
+  background: #FD6F00;
+  width: 120%;
+  height: 100%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  position: absolute;
+  top: 0;
+  left: -10%;
+  z-index: -1;
+  cursor: pointer;
+}
+.btn--style1:hover:before {
+  transform: translate3d(100%, 0, 0);
+}
+
+/* Heading and Button Styles End */
+*, *:before, *:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+input:not([type=radio]):not([type=checkbox]), textarea, select {
+  -webkit-appearance: none;
+}
+
+form, label {
+  -webkit-text-size-adjust: 100%;
+}
+
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+/* end reset */
+/*preset*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: #1E1E1E;
+}
+
+body.active {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed !important;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+textarea {
+  resize: vertical;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+}
+
+ul, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+a[href^="tel:"] {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+/* Additional Presets */
+a {
+  color: inherit;
+}
+
+video, iframe {
+  display: block;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text_center {
+  text-align: center;
+}
+
+header, section, .footer_top, .footer_btm {
+  padding: 0 25px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  min-height: 187px;
+}
+
+.header_holder {
+  padding: 0 25px;
+  position: fixed;
+  inset: 0 0 auto;
+  width: 100%;
+  z-index: 999;
+  opacity: 1;
+}
+
+.header_holder.fixheader {
+  background: #1E1E1E;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.header_con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  width: 200px;
+  position: relative;
+}
+.logo a {
+  position: absolute;
+  inset: 0;
+}
+.logo svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.logo svg g {
+  fill: #fff;
+}
+
+.nav {
+  position: relative;
+}
+.nav .hamburger {
+  display: none;
+  font-size: 30px;
+  line-height: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  z-index: 999;
+}
+.nav .hamburger::before {
+  content: "☰";
+}
+.nav .nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.nav .nav-menu li a:hover {
+  text-decoration: underline;
+}
+.nav .nav-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 997;
+  display: none;
+}
+.nav .nav-menu-overlay.active {
+  display: block;
+}
+
+.hero_con {
+  padding: 65px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.hero_info {
+  width: 49%;
+}
+.hero_info h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.hero_info h3 span {
+  display: block;
+  font-size: 32px;
+  color: #FD6F00;
+  margin-top: 0;
+}
+.hero_info h2 {
+  margin-top: 0;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 3%;
+  position: relative;
+}
+.hero_info h2 span {
+  display: block;
+  text-align: right;
+}
+.hero_info p {
+  margin: 30px 0;
+}
+
+.hero_img {
+  width: fit-content;
+  max-width: 48%;
+}
+.hero_img__profile {
+  position: relative;
+}
+.hero_img__profile:before {
+  content: "";
+  background: #fff;
+  border: 6px solid #FD6F00;
+  border-radius: 50%;
+  width: 498px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  inset: auto 0 0;
+  z-index: -1;
+  margin: 0 auto;
+}
+.hero_img__profile figure {
+  position: relative;
+  bottom: 5px;
+  left: 10px;
+}
+.hero_img__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+.hero_img__socials figure {
+  position: relative;
+}
+.hero_img__socials figure a {
+  position: absolute;
+  inset: 0;
+}
+.hero_img__socials figure:hover {
+  opacity: 0.8;
+}
+
+.about_con {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about_con .hero_img .hero_img__profile::before {
+  width: 556px;
+}
+.about_con .hero_img .hero_img__profile figure {
+  bottom: 0;
+  left: 0;
+}
+
+.about_info {
+  width: 48%;
+}
+.about_info p {
+  margin: 10px 0 20px;
+}
+
+.skills_con {
+  padding: 100px 0;
+}
+
+.skills_info {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skills_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 60px;
+}
+.skills_img figure {
+  max-width: 80px;
+}
+.skills_img figure :hover {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+  transform: scale(1.05);
+}
+
+.projects_con {
+  padding: 100px 0;
+}
+
+.projects_info {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.projects_cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+  text-align: center;
+}
+.projects_cards .projects_card {
+  width: 23%;
+  position: relative;
+  margin: 0 10px;
+  padding-bottom: 80px;
+}
+.projects_cards .projects_card:hover figure img {
+  transform: translateY(calc(-100% + 420px));
+}
+.projects_cards .projects_card:hover h2 {
+  bottom: 20px;
+}
+.projects_cards .projects_card figure {
+  text-align: center;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.projects_cards .projects_card figure img {
+  margin: 0 auto;
+  position: relative;
+  transition: ease-out 1.5s;
+}
+.projects_cards .projects_card h2 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 10px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  inset: auto 20px 120px;
+  border-radius: 20px;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  transition: ease-in-out 0.4s;
+}
+.projects_cards .projects_card h2 span {
+  display: block;
+}
+.projects_cards .projects_card a {
+  position: absolute;
+  inset: 0;
+}
+.projects_cards .slick-next {
+  right: -20px !important;
+}
+.projects_cards .slick-prev {
+  left: -20px !important;
+}
+.projects_cards .slick-prev::before, .projects_cards .slick-next::before {
+  color: #FD6F00;
+}
+
+.projects_btn a {
+  margin: 0 auto;
+}
+
+.contact_con {
+  padding: 100px 0;
+}
+
+.contact_info {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact_form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 50px auto 0;
+  max-width: 1200px;
+}
+.contact_form input, .contact_form textarea {
+  flex-grow: 1;
+  height: 75px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  color: #333;
+}
+.contact_form textarea {
+  resize: none;
+  overflow: auto;
+  padding-top: 18px;
+  width: 100%;
+  height: 150px;
+}
+.contact_form input::placeholder, .contact_form textarea::placeholder {
+  color: #333;
+}
+.contact_form button {
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.footer_top_con {
+  padding: 100px 0;
+}
+
+.footer_logo {
+  margin: 0 auto;
+}
+
+.footer_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 50px 0;
+}
+.footer_nav li a:hover {
+  text-decoration: underline;
+}
+
+.footer_btm {
+  background: #121212;
+}
+
+.footer_btm_con {
+  padding: 30px 0;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
