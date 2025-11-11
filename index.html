@@ -17,6 +17,13 @@
     <script type="module">
         import { track } from 'https://cdn.vercel-insights.com/v1/script.js';
 
+        // Track page load
+        track('pageview', {
+            path: window.location.pathname,
+            title: document.title
+        });
+
+        // Track a custom event
         document.querySelector('#signup-btn').addEventListener('click', () => {
             track('signup_button_clicked');
         });
