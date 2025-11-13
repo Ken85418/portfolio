@@ -29,11 +29,11 @@
     
 }
 @media only screen and (max-width: 1000px){
+    body.nav-open {
+        overflow: hidden;
+    }
     .nav .hamburger {
         display: block;
-        position: fixed;
-        top: 51px;
-        right: 25px;
     }
     .nav .hamburger.active:before{
         content: "\2716";
@@ -67,14 +67,54 @@
     .hero_img {
         display: none;
     }
+
+    .hero_info h2 span {
+        display: inline;
+        text-align: inherit;
+    }
+    .hero_info {
+        width: 100%;
+    }
+
+    .about_info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .projects_con {
+        padding: 60px 0;
+    }
+    .contact_con {
+        padding: 60px 0;
+    }
+
     
 }
 
 @media only screen and (max-width: 800px){
-    
+    .contact_form input, .contact_form textarea {
+        flex-grow: unset;
+        width: 100%;
+    }
+    .footer_nav {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 600px){
+    .hero_info h2 {
+        font-size: 50px;
+    }
+    .heading--style1 {
+        font-size: 30px;
+    }
+
+    .copyright q {
+        display: none;
+    }
+    .copyright small{
+        display: block;
+    }
     
 }
 
