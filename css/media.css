@@ -25,6 +25,7 @@
     .header_holder {
         position: static;
         padding: 0;
+        animation: none !important;
     }
     
 }
@@ -58,6 +59,10 @@
     .nav .nav-menu.active{
         right: 0;
         opacity: 1;
+    }
+    .nav-menu li a {
+        display: block;
+        line-height: 70px;
     }
 
     .cv_down{
@@ -106,7 +111,7 @@
         font-size: 50px;
     }
     .heading--style1 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .copyright q {
