@@ -25,6 +25,10 @@ $font-size--xlarge: 100px;
 .heading--style1{ 
 	font-size: $font-size--large; 
 	font-weight: 600;
+
+	span{
+		color: $color--primary;
+	}
 }
 
 .btn--style1{
@@ -212,7 +216,6 @@ header{
 	display: flex; 
 	justify-content: space-between; 
 	align-items: center;
-	flex-direction: row-reverse;
 }
 .hero_info{
 	width: 49%;
@@ -237,6 +240,7 @@ header{
 		span{
 			display: block;
 			text-align: right;
+			color: $color--primary;
 		}
 	}
 
@@ -296,30 +300,84 @@ header{
 
 
 .about_con{
-	padding: 50px 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.about_con .hero_img{
-
-	.hero_img__profile::before {
-		width: 556px;
-	}
-	.hero_img__profile figure {
-		bottom: 0;
-		left: 0;
-	}
+	padding: 60px 0;
 }
 
 .about_info{
-	width: 48%;
 
 	p{
 		margin: 10px 0 20px;
 	}
 }
+
+.about_exp{
+	&_flex{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 20px;
+		background: rgba(255, 255, 255, 0.05);
+		border-radius: 20px;
+		padding: 40px 30px;
+
+		&:hover{
+			transform: scale(1.01);
+		}
+
+		.about_exp_info{
+			width: 75%;
+
+			h2{
+				font-size: 28px;
+  				font-weight: 600;
+				margin-bottom: 20px;
+				a{
+					&:hover{
+						text-decoration: underline;
+					}	
+				}
+			}
+
+			ul{
+				font-size: 17px;
+				li{
+					position: relative;
+					padding-left: 15px;
+					margin-bottom: 3px;
+					&:before{
+						content: "•";
+						position: absolute;
+						top: 0;
+						left: 0;
+						line-height: inherit;
+					}
+				}
+			}
+
+			.exp_tech_stacks{
+				display: flex;
+				flex-wrap: wrap;
+				gap: 5px;
+				margin-top: 10px;
+
+				span{
+					display: block;
+					padding: 0 15px;
+					line-height: 30px;
+					background: rgba(255, 255, 255, 0.1);
+					border-radius: 20px;
+					font-size: 16px;
+				}
+			}
+		}
+
+		.exp_year{
+			width: 20%;
+			font-weight: 600;
+		}
+	}
+}
+
 
 
 .skills_con{

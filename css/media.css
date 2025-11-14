@@ -85,6 +85,18 @@
         width: 100%;
         text-align: center;
     }
+    .about_exp_flex {
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .about_exp_flex .about_exp_info {
+        width: 100%;
+        order: 2;
+    }
+    .about_exp_flex .exp_year {
+        width: 100%;
+    }
 
     .projects_con {
         padding: 60px 0;
