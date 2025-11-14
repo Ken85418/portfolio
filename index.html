@@ -244,12 +244,37 @@
                     <p>Have a project in mind or want to discuss opportunities? Feel free to reach out. I'm always open to new challenges and collaborations.</p>
                 </div>
 
-                <form id="contactForm" action="contact.php" method="POST" class="contact_form">
+                <form id="contactForm" class="contact_form">
                     <input type="text" name="name" placeholder="Name" required>
                     <input type="email" name="email" placeholder="Email" required>
                     <textarea name="message" placeholder="Message" required></textarea>
                     <button type="submit" class="btn--style1">Send</button>
                 </form>
+
+                <script>
+                    document.getElementById("contactForm").addEventListener("submit", async function (e) {
+                        e.preventDefault();
+
+                        const formData = {
+                            name: this.name.value,
+                            email: this.email.value,
+                            message: this.message.value,
+                        };
+
+                        const res = await fetch("/api/contact", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify(formData),
+                        });
+
+                        if (res.ok) {
+                            alert("Message sent!");
+                            this.reset();
+                        } else {
+                            alert("Email failed to send.");
+                        }
+                    });
+                </script>
                 
             </div>
         </div>
