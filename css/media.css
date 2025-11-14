@@ -98,6 +98,10 @@
         width: 100%;
     }
 
+    
+    .about_con {
+        padding: 60px 0;
+    }
     .projects_con {
         padding: 60px 0;
     }

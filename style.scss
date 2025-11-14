@@ -300,7 +300,7 @@ header{
 
 
 .about_con{
-	padding: 60px 0;
+	padding: 100px 0;
 }
 
 .about_info{
@@ -319,6 +319,7 @@ header{
 		background: rgba(255, 255, 255, 0.05);
 		border-radius: 20px;
 		padding: 40px 30px;
+		transition: ease 0.3s;
 
 		&:hover{
 			transform: scale(1.01);
@@ -379,7 +380,9 @@ header{
 }
 
 
-
+#skills{
+	background: #1a1a1a;
+}
 .skills_con{
 	padding: 100px 0;
 }
@@ -415,7 +418,7 @@ header{
 .projects_cards{
 	display: flex;
 	justify-content: space-between;
-	margin: 60px 0;
+	margin: 60px 0 10px;
 	text-align: center;
 
 	.projects_card{
@@ -492,6 +495,10 @@ header{
 }
 
 
+#contact{
+	background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url(images/contact-bg.jpg) no-repeat center top/ cover;
+	background-attachment: fixed;
+}
 .contact_con{
 	padding: 100px 0;
 }
@@ -511,14 +518,14 @@ header{
 	input, textarea{
 		flex-grow: 1;
 		height: 75px;
-		background: rgba(255, 255, 255, 0.9);
+		background: rgba(255, 255, 255, 0.7);
 		border: 1px solid #ccc;
 		border-radius: 14px;
 		padding: 0 20px;
 		font-family: $font--primary;
 		font-size: $bodyFontSize;
 		font-weight: $bodyFontWeight;
-		color: #333;
+		color: #000;
 	}
 	textarea{
 		resize: none;

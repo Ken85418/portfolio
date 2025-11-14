@@ -371,7 +371,7 @@ header {
 }
 
 .about_con {
-  padding: 60px 0;
+  padding: 100px 0;
 }
 
 .about_info p {
@@ -386,6 +386,7 @@ header {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   padding: 40px 30px;
+  transition: ease 0.3s;
 }
 .about_exp_flex:hover {
   transform: scale(1.01);
@@ -435,6 +436,10 @@ header {
   font-weight: 600;
 }
 
+#skills {
+  background: #1a1a1a;
+}
+
 .skills_con {
   padding: 100px 0;
 }
@@ -472,7 +477,7 @@ header {
 .projects_cards {
   display: flex;
   justify-content: space-between;
-  margin: 60px 0;
+  margin: 60px 0 10px;
   text-align: center;
 }
 .projects_cards .projects_card {
@@ -532,6 +537,11 @@ header {
   margin: 0 auto;
 }
 
+#contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/contact-bg.jpg) no-repeat center top/cover;
+  background-attachment: fixed;
+}
+
 .contact_con {
   padding: 100px 0;
 }
@@ -553,14 +563,14 @@ header {
 .contact_form input, .contact_form textarea {
   flex-grow: 1;
   height: 75px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.7);
   border: 1px solid #ccc;
   border-radius: 14px;
   padding: 0 20px;
   font-family: "Poppins", sans-serif;
   font-size: 21px;
   font-weight: 400;
-  color: #333;
+  color: #000;
 }
 .contact_form textarea {
   resize: none;
