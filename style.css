@@ -538,7 +538,7 @@ header {
 }
 
 #contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/contact-bg.jpg) no-repeat center top/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/contact-bg.webp) no-repeat center top/cover;
   background-attachment: fixed;
 }
 
