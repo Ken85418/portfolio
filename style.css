@@ -93,12 +93,7 @@ table {
 }
 
 button, html input[type=button], input[type=reset], input[type=submit] {
-  -webkit-appearance: button;
   cursor: pointer;
-}
-
-input:not([type=radio]):not([type=checkbox]), textarea, select {
-  -webkit-appearance: none;
 }
 
 form, label {
