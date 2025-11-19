@@ -126,8 +126,62 @@
                 </div>
 
                 <div class="projects_btn">
-                    <a href="javascript:;" class="btn--style1">More Projects</a>
+                    <a href="projects.html" class="btn--style1">More Projects</a>
                 </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="wrapper">
+            <div class="contact_con">
+
+                <div class="contact_info text_center">
+                    <h2 class="heading--style1">Send Me <span>a Message</span></h2>
+                    <p>Have a project in mind or want to discuss opportunities? Feel free to reach out. I'm always open to new challenges and collaborations.</p>
+                </div>
+
+                <form id="contactForm" class="contact_form">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn--style1">Send</button>
+                </form>
+
+                <script>
+                    document.getElementById("contactForm").addEventListener("submit", async function (e) {
+                        e.preventDefault();
+
+                        const form = this;
+
+                        // Get reCAPTCHA token
+                        grecaptcha.ready(async () => {
+                            const token = await grecaptcha.execute("6LeEUQwsAAAAAIoC45wmUoAzKWmQe5oDK3jegAuC", { action: "submit" });
+
+                            const formData = {
+                                name: form.name.value,
+                                email: form.email.value,
+                                message: form.message.value,
+                                captcha: token
+                            };
+
+                            const res = await fetch("/api/contact", {
+                                method: "POST",
+                                headers: { "Content-Type": "application/json" },
+                                body: JSON.stringify(formData),
+                            });
+
+                            if (res.ok) {
+                                alert("Message sent!");
+                                form.reset();
+                            } else {
+                                alert("CAPTCHA failed or email error occurred.");
+                            }
+                        });
+                    });
+                </script>
+
                 
             </div>
         </div>
@@ -168,12 +222,12 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://www.google.com/recaptcha/api.js?render=6LeEUQwsAAAAAIoC45wmUoAzKWmQe5oDK3jegAuC"></script>
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/plugin.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeEUQwsAAAAAIoC45wmUoAzKWmQe5oDK3jegAuC"></script>
 
 </body>
 </html>
