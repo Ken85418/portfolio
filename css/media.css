@@ -30,6 +30,9 @@
     
 }
 @media only screen and (max-width: 1000px){
+    header {
+        min-height: 0;
+    }
     body.nav-open {
         overflow: hidden;
     }
@@ -69,8 +72,15 @@
         display: none;
     }
 
+    .hero_con {
+        padding: 60px 0;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
     .hero_img {
-        
+        width: 350px;
+        max-width: 80%;
+        margin: 0 auto;
     }
 
     .hero_info h2 span {
