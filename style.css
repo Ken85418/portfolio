@@ -289,7 +289,7 @@ header {
 .hero_con {
   padding: 65px 0 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -324,45 +324,17 @@ header {
 }
 
 .hero_img {
-  width: fit-content;
+  width: 450px;
   max-width: 48%;
-}
-.hero_img__profile {
-  position: relative;
-}
-.hero_img__profile:before {
-  content: "";
-  background: #fff;
-  border: 6px solid #FD6F00;
-  border-radius: 50%;
-  width: 498px;
   aspect-ratio: 1/1;
-  position: absolute;
-  inset: auto 0 0;
-  z-index: -1;
-  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid #FD6F00;
 }
-.hero_img__profile figure {
+.hero_img img {
+  object-fit: contain;
   position: relative;
-  bottom: 5px;
-  left: 10px;
-}
-.hero_img__socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  margin-top: 30px;
-}
-.hero_img__socials figure {
-  position: relative;
-}
-.hero_img__socials figure a {
-  position: absolute;
-  inset: 0;
-}
-.hero_img__socials figure:hover {
-  opacity: 0.8;
+  top: -14%;
 }
 
 .about_con {
@@ -603,6 +575,24 @@ header {
 }
 .footer_nav li a:hover {
   text-decoration: underline;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+.social_icons figure {
+  position: relative;
+}
+.social_icons figure a {
+  position: absolute;
+  inset: 0;
+}
+.social_icons figure:hover {
+  opacity: 0.8;
 }
 
 .footer_btm {

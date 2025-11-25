@@ -213,7 +213,7 @@ header{
 .hero_con{
 	padding: 65px 0 30px;
 	display: flex; 
-	justify-content: space-between; 
+	justify-content: space-around; 
 	align-items: center;
 }
 .hero_info{
@@ -249,51 +249,17 @@ header{
 
 }
 .hero_img{
-	width: fit-content;
+	width: 450px;
 	max-width: 48%;
-	
-	&__profile{
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 10px solid $color--primary;
+
+	img {
+		object-fit: contain;
 		position: relative;
-
-		&:before{
-			content: "";
-			background: #fff;
-			border: 6px solid $color--primary;
-			border-radius: 50%;
-			width: 498px;
-			aspect-ratio: 1/1;
-			position: absolute;
-			inset: auto 0 0;
-			z-index: -1;
-			margin: 0 auto;
-		}
-
-		figure{
-			position: relative;
-			bottom: 5px;
-			left: 10px;
-		}
-	}
-
-	&__socials{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 25px;
-		margin-top: 30px;
-
-		figure{
-			position: relative;
-
-			a{
-				position: absolute;
-				inset: 0;
-			}
-
-			&:hover{
-				opacity: 0.8;
-			}
-		}
+		top: -14%;
 	}
 }
 
@@ -568,6 +534,26 @@ header{
 		
 	}
 }
+.social_icons{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 25px;
+		margin-top: 30px;
+
+		figure{
+			position: relative;
+
+			a{
+				position: absolute;
+				inset: 0;
+			}
+
+			&:hover{
+				opacity: 0.8;
+			}
+		}
+	}
 
 .footer_btm{
 	background: #121212;
