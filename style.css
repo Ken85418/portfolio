@@ -324,14 +324,16 @@ header {
 }
 
 .hero_img {
-  width: 450px;
+  width: 350px;
   max-width: 48%;
   aspect-ratio: 1/1;
   border-radius: 50%;
   overflow: hidden;
   border: 10px solid #FD6F00;
+  background: #FD6F00;
 }
 .hero_img img {
+  width: 100%;
   object-fit: contain;
   position: relative;
   top: -14%;
