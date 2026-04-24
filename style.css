@@ -504,6 +504,7 @@ header {
 
 .projects_btn a {
   margin: 0 auto;
+  display: none;
 }
 
 #contact {
